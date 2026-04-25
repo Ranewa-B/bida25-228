@@ -1,11 +1,30 @@
 
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #f5e6e8; /* Soft Nude background */
   color: #333333; /* Charcoal text */
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main {
+  flex: 1;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #a8d5e2;
 }
 
 /* Header */
@@ -99,12 +118,24 @@ summary {
 footer {
   background-color: #a8d5e2;   /* light background strip */
   text-align: center;          /* center the text */
-  padding: 15px;               
   font-size: 14px;             /* smaller text */
   color: #333;                 /* dark grey text */
   border-top: 2px solid #ddd;  /* subtle line above */           
-  bottom: 0;                   
-  left: 0;
   width: 100%;                 
+}
+
+.footer-content {
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
