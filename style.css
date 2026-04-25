@@ -1,0 +1,87 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5e6e8; /* Soft Nude background */
+  color: #333333; /* Charcoal text */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: white;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation inside header */
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav a:hover {
+  text-decoration: bold;
+  color: #333333; /* Charcoal hover */
+}
+
+
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+/* Sections */
+section h1,h2 {
+  background-color: #a8d5e2; /* pastel blue border */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Cookie Flavor (example content block) */
+.cookie {
+  border: 1px solid #a8d5e2; /* pastel blue border */
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #a8d5e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+}
+
+button:hover, .btn:hover {
+  background-color: #333333; /* Charcoal hover */
+}
+
+footer {
+  background-color: #a8d5e2;   /* light background strip */
+  text-align: center;          /* center the text */
+  padding: 15px;               
+  font-size: 14px;             /* smaller text */
+  color: #333;                 /* dark grey text */
+  border-top: 2px solid #ddd;  /* subtle line above */           
+  bottom: 0;                   
+  left: 0;
+  width: 100%;                 
+}
+
