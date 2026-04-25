@@ -49,11 +49,10 @@ header nav a {
 }
 
 header nav a:hover {
-  text-decoration: bold;
-  color: #333333; /* Charcoal hover */
+  font-weight: bold;       /* makes text bold */
+  color: #333333;          /* charcoal hover */
+  text-decoration: none;   /* optional: removes underline */
 }
-
-
 
 /* Main content */
 main {
