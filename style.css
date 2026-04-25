@@ -29,13 +29,15 @@ nav {
 
 /* Header */
 header {
-  background-color: white;
+  background-image: url('mu_images/hero banner..png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
-  padding: 20px;
-  text-align: center;
 }
 
-/* Navigation inside header */
+
+/* Navigation section */
 header nav {
   margin-top: 10px;
 }
