@@ -72,6 +72,29 @@ button, .btn {
 button:hover, .btn:hover {
   background-color: #333333; /* Charcoal hover */
 }
+ 
+.nutrition-box {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.nutrition-box h3 {
+  margin-bottom: 8px;
+  color: #4CAF50; /* accent color */
+}
+
+details {
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 footer {
   background-color: #a8d5e2;   /* light background strip */
