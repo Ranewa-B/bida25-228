@@ -1,17 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-   <title>Loaded Goodies</title>
-   <link rel="stylesheet" href="style.css">
-    <meta name=""viewport" content=""width=device-width, initial-scale="1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Loaded Goodies — Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      /* Custom styles for the contact page */
+      /* === CONTACT PAGE === */
+.form-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
 
+.form-label {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+
+.form-control {
+  font-family: var(--font-body);
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 12px;
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px rgba(168, 213, 226, 0.3);
+  outline: none;
+}
+
+/* HTML5 validation colours — pure CSS, no JS needed */
+.form-control:invalid:not(:placeholder-shown) {
+  border-color: #e74c3c;
+}
+
+.form-control:valid:not(:placeholder-shown) {
+  border-color: #2ecc71;
+}
+
+.radio-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  background: #f5f5f5;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1.5px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.radio-option:has(input:checked) {
+  background: var(--brand-blue);
+  color: white;
+  border-color: var(--brand-blue);
+}
+
+.required {
+  color: #e74c3c;
+}
+
+.required-note {
+  font-size: 12px;
+  color: #999;
+  font-family: var(--font-body);
+  margin-bottom: 16px;
+}
+
+.info-card {
+  background: var(--nude);
+  border-radius: 12px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--brand-blue);
+}
+
+.info-card h5 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--charcoal);
+}
+
+.info-card p {
+  font-family: var(--font-body);
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+  .form-card {
+    padding: 20px 16px;
+  }
+}
+</style>
 </head>
 
 <body>
 
- 
   <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a8d5e2;">
     <div class="container">
@@ -22,104 +129,209 @@
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacts.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<main>
+  <main>
 
-<br><br>
+    <!-- PAGE HEADING -->
+    <section>
+      <h2>Order Your Cookies</h2>
+    </section>
 
-<h2>Order your cookies</h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
 
-<!--Order form-->
- 
-<form> 
- 
-<div class="mb-3"> 
- 
-<label class="form-label">Full name</label> 
- 
-<input type="text" class="form-control"> 
- 
-</div> 
- 
-<div class="mb-3"> 
- 
-<label class="form-label">Email</label> 
- 
-<input type="email" class="form-control"> 
- 
-</div> 
- 
-<div class="mb-3"> 
- 
-<label class="form-label">Order details</label> 
- 
-<textarea class="form-control"></textarea> 
- 
-</div> 
- 
-<a href="thankyou.html" class="btn btn-primary">Submit</a>
-</button> 
-</form> 
-<br><br>
-<!--radio button-->
-<form>
-  
+          <!-- ORDER FORM -->
+          <div class="form-card">
 
-  <div>
-    <label>
-      <input type="radio" name="deliveryOption" value="pickup">
-      Pick Up
-    </label>
-    <label>
-      <input type="radio" name="deliveryOption" value="delivery">
-      Delivery
-    </label>
-  </div>
-</form>
+            <form action="thankyou.html" method="get">
 
-<br><br>
+              <!-- Full Name -->
+              <div class="mb-3">
+                <label for="fullName" class="form-label">
+                  Full Name <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="e.g. Lerato Mokoena"
+                  minlength="2"
+                  required>
+              </div>
 
-<!--Drop down options-->
-<label for="pickTime">Select pick time:</label>
-<select id="pickTime" name="pickTime">
-  <option value="morning">0800-1100hrs</option>
-  <option value="afternoon">1200-1500hrs</option>
-  <option value="evening">1600-1900hrs</option>
-</select>
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Email Address <span class="required">*</span>
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="e.g. lerato@email.com"
+                  required>
+              </div>
 
-<label for="pickDate">Select pick date:</label>
-<select id="pickDate" name="pickDate">
-  <option value="Monday">Monday</option>
-  <option value="Tuesday">Tuesday</option>
-  <option value="Wednesday">Wednesday</option>
-  <option value="Thursday">Thursday</option>
-  <option value="Friday">Friday</option>
-</select>
+              <!-- Phone -->
+              <div class="mb-3">
+                <label for="phone" class="form-label">
+                  Phone Number <span class="required">*</span>
+                </label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="e.g. +267 76 000 000"
+                  pattern="[0-9+\s]{7,15}"
+                  required>
+              </div>
 
- 
-</div> 
-<br><br>
-</main>
- <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <p>Contact</p>
-                <p>+267 76 543 435</p>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Loaded Goodies. All rights reserved.</p>
-            </div>
+              <!-- Cookie Flavour -->
+              <div class="mb-3">
+                <label for="flavour" class="form-label">
+                  Cookie Flavour <span class="required">*</span>
+                </label>
+                <select class="form-control" id="flavour" name="flavour" required>
+                  <option value="">-- Select a flavour --</option>
+                  <option value="choc-chip">Chocolate Chip — P100 for 8</option>
+                  <option value="red-velvet">Red Velvet — P105 for 8</option>
+                  <option value="chocolate">Chocolate — P110 for 8</option>
+                  <option value="salted-caramel">Salted Caramel — P115 for 8</option>
+                  <option value="snickerdoodle">Snickerdoodle — P126 for 8</option>
+                  <option value="pecan">Pecan — P140 for 8</option>
+                  <option value="raisin">Raisin — P115 for 8</option>
+                  <option value="confetti">Confetti — P100 for 8</option>
+                  <option value="ginger">Ginger — P120 for 8</option>
+                  <option value="peanut-butter">Peanut Butter — P135 for 8</option>
+                  <option value="orange-zest">Orange Zest — P125 for 8</option>
+                  <option value="custom">Custom — Inquire for pricing</option>
+                </select>
+              </div>
+
+              <!-- Quantity -->
+              <div class="mb-3">
+                <label for="quantity" class="form-label">
+                  Quantity (packs of 8) <span class="required">*</span>
+                </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity"
+                  name="quantity"
+                  placeholder="e.g. 2"
+                  min="1"
+                  max="50"
+                  required>
+              </div>
+
+              <!-- Delivery Option -->
+              <div class="mb-3">
+                <label class="form-label">
+                  Delivery Option <span class="required">*</span>
+                </label>
+                <div class="radio-group">
+                  <label class="radio-option">
+                    <input type="radio" name="deliveryOption" value="pickup" required>
+                    🏠 Pick Up
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="deliveryOption" value="delivery">
+                    🚗 Delivery
+                  </label>
+                </div>
+              </div>
+
+              <!-- Pick Up Time -->
+              <div class="mb-3">
+                <label for="pickTime" class="form-label">
+                  Preferred Time <span class="required">*</span>
+                </label>
+                <select class="form-control" id="pickTime" name="pickTime" required>
+                  <option value="">-- Select a time --</option>
+                  <option value="morning">0800 – 1100hrs</option>
+                  <option value="afternoon">1200 – 1500hrs</option>
+                  <option value="evening">1600 – 1900hrs</option>
+                </select>
+              </div>
+
+              <!-- Pick Up Day -->
+              <div class="mb-3">
+                <label for="pickDate" class="form-label">
+                  Preferred Day <span class="required">*</span>
+                </label>
+                <select class="form-control" id="pickDate" name="pickDate" required>
+                  <option value="">-- Select a day --</option>
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                </select>
+              </div>
+
+              <!-- Extra Notes -->
+              <div class="mb-3">
+                <label for="notes" class="form-label">Additional Notes</label>
+                <textarea
+                  class="form-control"
+                  id="notes"
+                  name="notes"
+                  rows="3"
+                  placeholder="Any allergies, special requests or custom designs..."></textarea>
+              </div>
+
+              <!-- Required note -->
+              <p class="required-note">
+                <span class="required">*</span> All starred fields are required
+              </p>
+
+              <!-- Submit -->
+              <button type="submit" class="btn btn-primary w-100">
+                Place My Order 🍪
+              </button>
+
+            </form>
+
+          </div><!-- end form-card -->
+
+          <!-- CONTACT INFO CARD -->
+          <div class="info-card mt-4 mb-4">
+            <h5>Other ways to reach us</h5>
+            <p>📞 +267 76 543 435</p>
+            <p>📍 Gaborone, Botswana</p>
+            <p>🕐 Available Monday – Friday</p>
+          </div>
+
         </div>
-    </footer>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <p>Contact: +267 76 543 435</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Loaded Goodies. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
