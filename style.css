@@ -264,3 +264,104 @@ img {
   }
 }
 
+/* === PRODUCTS PAGE === */
+.products-hero {
+  background-color: var(--nude);
+  padding: 40px 20px 20px;
+}
+
+.products-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--charcoal);
+}
+
+.hero-sub {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Filter buttons */
+.filter-btn {
+  background: white;
+  border: 2px solid var(--brand-blue);
+  color: var(--charcoal);
+  font-family: var(--font-body);
+  font-weight: 700;
+  padding: 6px 20px;
+  border-radius: 999px;
+  margin: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--brand-blue);
+  color: white;
+}
+
+/* Price styling */
+.price {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+}
+
+/* Nutrition link */
+.nutrition-link {
+  font-size: 0.82rem;
+  color: var(--brand-blue);
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.nutrition-link:hover {
+  text-decoration: underline;
+}
+
+/* Premium badge */
+.premium-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--charcoal);
+  color: white;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  z-index: 1;
+}
+
+/* Custom card highlight */
+.custom-card {
+  border: 2px dashed var(--brand-blue);
+  background: #f0fafd;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: var(--brand-blue);
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+
+.cta-banner h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: white;
+}
+
+.cta-banner p {
+  font-family: var(--font-body);
+  color: white;
+  font-size: 1rem;
+}
+

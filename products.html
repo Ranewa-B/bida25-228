@@ -2,9 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-   <title>Loaded Goodies</title>
+   <title>Loaded Goodies-Products</title>
    <link rel="stylesheet" href="style.css">
-    <meta name=""viewport" content=""width=device-width, initial-scale="1">
+    <meta name="viewport" content="width=device-width, initial-scale="1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
@@ -53,191 +56,173 @@
 </section>
 
 <!--COOKIE CARDS-->
-<!--Chocolate chip cookie-->
-<div class="d-flex justify-content-center flex-wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/CC card.png">
-    <div class="card-body">
-      <h5 class="card-title">Chocolate chip </h5>
-      <p class="card-text">P100 for 8</p> <!--Price instead?-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
+<div class="container">
+      <div class="row g-4" id="cookie-grid">
+
+        <!-- Chocolate chip -->
+        <div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/CC card.png" alt="Chocolate chip cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Chocolate Chip</h5>
+              <p class="card-text">The classic everyone loves.</p>
+              <p class="price">P100 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 <!--Red velvet-->
-<div class="d-flex justify-content-center flex wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/RV card.png">
-    <div class="card-body">
-      <h5 class="card-title">Red velvet</h5>
-      <p class="card-text">P105 for 8</p> <!--price instead-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/RV card.png" alt="Red velvet cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Red Velvet</h5>
+              <p class="card-text">Rich, velvety and irresistible.</p>
+              <p class="price">P105 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 <!--Chocolate cookie card-->
-<div class="d-flex justify-content-center flex-wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/C card.png">
-    <div class="card-body">
-      <h5 class="card-title">Chocolate</h5>
-      <p class="card-text">P110 for 8</p> <!--price?-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/C card.png" alt="Chocolate cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Chocolate</h5>
+              <p class="card-text">Rich and delicious.</p>
+              <p class="price">P110 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 
 <!--Salted caramel-->
-<div class="d-flex justify-content-center flex wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/SC card.png">
-    <div class="card-body">
-      <h5 class="card-title">Salted caramel</h5>
-      <p class="card-text">P115 for 8</p> <!--price instead-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/SC card.png" alt="Salted caramel cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Salted Caramel</h5>
+              <p class="card-text">Sweet and salty perfection.</p>
+              <p class="price">P115 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 
 <!--Snickerdoodle-->
-<div class="d-flex justify-content-center flex wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/SD card.png">
-    <div class="card-body">
-      <h5 class="card-title">Snicker Doodle</h5>
-      <p class="card-text">P126 for 8</p> <!--price instead-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
-<!--Peacan-->
-<div class="d-flex justify-content-center flex-wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/P card.png">
-    <div class="card-body">
-      <h5 class="card-title">Peacan</h5>
-      <p class="card-text">P140 for 8</p> <!--price?-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/SD card.png" alt="Snickerdoodle cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Snicker Doodle</h5>
+              <p class="card-text">A delightful twist on a classic favorite.</p>
+              <p class="price">P126 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
+    
+<!-- Pecan -->
+        <div class="col-6 col-md-4 cookie-item premium">
+          <div class="card h-100">
+            <div class="premium-badge">Premium</div>
+            <img src="mu_images/P card.png" alt="Pecan cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pecan</h5>
+              <p class="card-text">Buttery, nutty and golden.</p>
+              <p class="price">P140 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 
 <!--Raisin-->
-<div class="d-flex justify-content-center flex wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/R card.png">
-    <div class="card-body">
-      <h5 class="card-title">Raisin</h5>
-      <p class="card-text">P115 for 8</p> <!--price instead-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+ <div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/R card.png" alt="Raisin cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Raisin</h5>
+              <p class="card-text">Soft, chewy and full of flavour.</p>
+              <p class="price">P115 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 
 <!--Confetti-->
-<div class="d-flex justify-content-center flex wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/CF card.png">
-    <div class="card-body">
-      <h5 class="card-title">Confetti</h5>
-      <p class="card-text">P100 for 8</p> <!--price instead-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/CF card.png" alt="Confetti cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Confetti</h5>
+              <p class="card-text">Colourful and fun for any occasion.</p>
+              <p class="price">P100 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 
 <!--Ginger-->
-<div class="d-flex justify-content-center flex-wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/G card.png">
-    <div class="card-body">
-      <h5 class="card-title">Ginger</h5>
-      <p class="card-text">P120 for 8</p> <!--Price instead?-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/G card.png" alt="Ginger cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ginger</h5>
+              <p class="card-text">Spicy and warming.</p>
+              <p class="price">P120 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
+    
 <!--Peanut Butter-->
-<div class="d-flex justify-content-center flex wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/PB card.png">
-    <div class="card-body">
-      <h5 class="card-title">Peanut butter</h5>
-      <p class="card-text">P135 for 8</p> <!--price instead-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/PB card.png" alt="Peanut butter cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Peanut butter</h5>
+              <p class="card-text">Creamy and delicious.</p>
+              <p class="price">P135 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 <!--Orange Zest-->
-<div class="d-flex justify-content-center flex-wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/OZ card.png">
-    <div class="card-body">
-      <h5 class="card-title">Orange Zest</h5>
-      <p class="card-text">P125 for 8</p> <!--price?-->
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div>
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/OZ card.png" alt="Orange zest cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Orange Zest</h5>
+              <p class="card-text">Citrusy and refreshing.</p>
+              <p class="price">P125 for 8</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 
 <!--Custom-->
-<div class="d-flex justify-content-center flex wrap">
-  <div class="card m-2" style="width: 18rem;">
-    <img src="mu_images/Cust cookies.png">
-    <div class="card-body">
-      <h5 class="card-title">Custom Cookies</h5>
-      <p class="card-text">Inquire for more</p>
-      <div>
-      <a href="nutrition.html">Nutritional Information</a>
-      <br></br>
-      </div> 
-      <a href="contacts.html" class="btn btn-primary">Order now!</a>
-    </div>
-  </div>
-</div>
-
+<div class="col-6 col-md-4 cookie-item classic">
+          <div class="card h-100">
+            <img src="mu_images/Cust cookies.png" alt="Custom cookie" width="286" height="180" class="card-img-top">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Custom Cookies</h5>
+              <p class="card-text">Inquire for more</p>
+              <a href="nutrition.html" class="nutrition-link">🥗 Nutritional Info</a>
+              <a href="contacts.html" class="btn btn-primary mt-auto">Order now!</a>
+            </div>
+          </div>
+        </div>
 </main>
 
 <footer>
@@ -251,6 +236,52 @@
             </div>
         </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+    // FILTER BUTTONS
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.cookie-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+            setTimeout(() => item.style.opacity = '1', 10);
+          } else {
+            item.style.opacity = '0';
+            setTimeout(() => item.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+
+    // CARD FADE-IN ON SCROLL
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    items.forEach((item, i) => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+      observer.observe(item);
+    });
+    // IMAGE ZOOM ON HOVER
+    document.querySelectorAll('.card').forEach(card => {
+      const img = card.querySelector('img');
+      card.addEventListener('mouseenter', () => img.style.transform = 'scale(1.08)');
+      card.addEventListener('mouseleave', () => img.style.transform = 'scale(1)');
+    });
+  </script>
 </body>
     </html>
