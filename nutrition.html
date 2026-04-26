@@ -1,219 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Thank You</title>
+    <meta charset="UTF-8">
+   <title>Loaded Goodies-Products</title>
+   <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale="1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 50px;
-    }
-    .thank-you {
-      background: #b5d9e3;
-      padding: 40px;
+    .nutrition-box {
+      background-color: #ffffff;
+      border: 2px solid #a8d5e2;   /* pastel blue border */
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      display: inline-block;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    h1 {
+    .nutrition-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+    .nutrition-box h3 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.4rem;
+      color: #a8d5e2;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    summary {
+      font-weight: 700;
+      cursor: pointer;
       color: #333;
     }
-    p {
-      font-style: italic; /* inline requirement can be shown here */
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #4c96af;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
+    details[open] summary {
+      color: #a8d5e2;
     }
   </style>
 </head>
 <body>
-  <!--chocolate chip-->
-<div class="nutrition-box">
-  <h3>Chocolate Chip</h3>
-  
+  <div class="container my-5">
+    <div class="row">
+      
+      <!-- Chocolate Chip -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Chocolate Chip</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, brown sugar, eggs, vanilla, chocolate chips, baking soda, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs, soy.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, sugar, brown sugar, eggs, vanilla, chocolate chips, baking soda, salt.</p>
-  </details>
+      <!-- Red Velvet -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Red Velvet</h3>
+          <details><summary>Ingredients</summary><p>Flour, cocoa powder, butter, sugar, eggs, vanilla, red food coloring, cream cheese frosting.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs, soy.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Allergens</summary>
-    <p>Wheat, dairy, eggs, soy (from chocolate).</p>
-  </details>
-</div>
-<!--red velvet-->
-<div class="nutrition-box">
-  <h3>red velvet</h3>
-  
+      <!-- Chocolate -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Chocolate</h3>
+          <details><summary>Ingredients</summary><p>Flour, cocoa powder, butter, sugar, brown sugar, eggs, vanilla, baking soda, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs, soy.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Ingredients</summary>
-    <p>Organic flour, butter, sugar, cocoa, cream filling.</p>
-  </details>
+      <!-- Salted Caramel -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Salted Caramel</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, brown sugar, eggs, vanilla, caramel bits, sea salt, baking soda.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs, soy.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Allergens</summary>
-    <p>Contains wheat, dairy, soy.</p>
-  </details>
-</div>
-<!--chocolate-->
-<div class="nutrition-box">
-  <h3>Chocolate</h3>
-  
+      <!-- Snickerdoodle -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Snickerdoodle</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, eggs, vanilla, cream of tartar, baking soda, cinnamon, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Ingredients</summary>
-    <p>Organic flour, butter, sugar, chocolate chips, sea salt.</p>
-  </details>
+      <!-- Pecan -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Pecan</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, brown sugar, eggs, vanilla, pecans, baking soda, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs, tree nuts (pecans), soy.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Allergens</summary>
-    <p>Contains wheat, dairy, soy.</p>
-  </details>
-</div>
-<!--Salted caramel-->
-<div class="nutrition-box">
-  <h3>Salted Caramel</h3>
-  
+      <!-- Raisin -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Raisin</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, brown sugar, eggs, vanilla, raisins, cinnamon, baking soda, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, sugar, brown sugar, eggs, vanilla, caramel bits, sea salt, baking soda.</p>
-  </details>
+      <!-- Confetti -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Confetti</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, eggs, vanilla, rainbow sprinkles, baking powder, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs, soy.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Allergens</summary>
-    <p>Wheat, dairy, eggs, soy.</p>
-  </details>
-</div>
+      <!-- Ginger -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Ginger</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, brown sugar, eggs, vanilla, ground ginger, cinnamon, nutmeg, baking soda, molasses, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs.</p></details>
+        </div>
+      </div>
 
+      <!-- Peanut Butter -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Peanut Butter</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, brown sugar, eggs, vanilla, peanut butter, baking soda, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs, peanuts.</p></details>
+        </div>
+      </div>
 
-<!--Snkicker doodle-->
-<div class="nutrition-box">
-  <h3>Snicker doodle</h3>
+      <!-- Orange Zest -->
+      <div class="col-6">
+        <div class="nutrition-box">
+          <h3>Orange Zest</h3>
+          <details><summary>Ingredients</summary><p>Flour, butter, sugar, eggs, vanilla, orange zest, baking powder, salt.</p></details>
+          <details><summary>Allergens</summary><p>Wheat, dairy, eggs.</p></details>
+        </div>
+      </div>
 
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, sugar, eggs, vanilla, cream of tartar, baking soda, cinnamon, salt.</p>
-  </details>
-
-  <details>
-    <summary>Allergens</summary>
-    <p>Contains wheat, dairy, eggs.</p>
-  </details>
-</div>
-<!--Pecan-->
-<div class="nutrition-box">
-  <h3>Pecan</h3>
-
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, sugar, brown sugar, eggs, vanilla, pecans, baking soda, salt.</p>
-  </details>
-
-  <details>
-    <summary>Allergens</summary>
-    <p>Wheat, dairy, eggs, tree nuts (pecans), soy.</p>
-  </details>
-</div>
-<!--Raisin-->
-<div class="nutrition-box">
-  <h3>Raisin</h3>
-  
-
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, cinnamon, sugar, brown sugar, eggs, vanilla, raisins, baking soda, salt.</p>
-  </details>
-
-  <details>
-    <summary>Allergens</summary>
-    <p>Wheat, dairy, eggs, soy.</p>
-  </details>
-</div>
-
-
-
-
-
-
-<!--confetti-->
-<div class="nutrition-box">
-  <h3>Confetti</h3>
-  
-
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, sugar, eggs, vanilla, rainbow sprinkles, baking powder, salt.</p>
-  </details>
-
-  <details>
-    <summary>Allergens</summary>
-    <p>Wheat, dairy, eggs, soy</p>
-  </details>
-</div>
-<!--Ginger-->
-<div class="nutrition-box">
-  <h3>Ginger</h3>
-  
-
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, sugar, brown sugar, eggs, vanilla, ground ginger, cinnamon, nutmeg, baking soda, molasses, salt.</p>
-  </details>
-
-  <details>
-    <summary>Allergens</summary>
-    <p>Contains wheat, dairy, soy.</p>
-  </details>
-</div>
-<!--peanut butter-->
-<div class="nutrition-box">
-  <h3>Peanut Butter</h3>
-  
-
-  <details>
-    <summary>Ingredients</summary>
-    <p>Flour, butter, sugar, brown sugar, eggs, vanilla, peanut butter, baking soda, salt.</p>
-  </details>
-
-  <details>
-    <summary>Allergens</summary>
-    <p>Wheat, dairy, eggs, peanuts</p>
-  </details>
-</div>
-<!--Orange Zest-->
-<div class="nutrition-box">
-  <h3>Orange Zest</h3>
-  
-
-  <details>
-    <summary>Ingredients</summary>
-    <p> Flour, butter, sugar, eggs, vanilla, orange zest, baking powder, salt</p>
-  </details>
-
-  <details>
-    <summary>Allergens</summary>
-    <p> Wheat, dairy, eggs.</p>
-  </details>
-</div>
-
-
-
-
-
-
-
-
+    </div>
+  </div>
 </body>
 </html>
+
+    

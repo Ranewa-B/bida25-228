@@ -364,4 +364,22 @@ img {
   color: white;
   font-size: 1rem;
 }
+/* === NUTRITION BOX === */
+.nutrition-box {
+  background-color: #ffffff;              /* clean white card */
+  border: 2px solid var(--brand-blue);    /* pastel blue border */
+  border-radius: 8px;                     /* rounded corners */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;                       /* keeps boxes neat */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);/* soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nutrition-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+
 
