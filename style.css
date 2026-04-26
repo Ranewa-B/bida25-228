@@ -57,13 +57,20 @@ nav {
 }
 
 .nav-link:hover {
-  color: white !important;
+  color: #f0fafd !important;
 }
 
 .nav-link:focus {
   outline: 2px solid var(--charcoal);
   border-radius: 3px;
 }
+
+.nav-link.active {
+  font-weight: bold;
+  color: #333333; /*  charcoal color */
+  border-bottom: 2px solid #333333;
+}
+
 
 /* === HEADER === */
 header {
