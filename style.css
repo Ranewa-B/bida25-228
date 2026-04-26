@@ -165,24 +165,7 @@ button:active,
   transform: scale(0.96);
 }
 
-/* === NUTRITION BOX === */
-.nutrition-box {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 15px;
-  margin-bottom: 20px;
-  background-color: #fafafa;
-}
-
-.nutrition-box h3 {
-  margin-bottom: 8px;
-  font-family: var(--font-body);
-  color: var(--brand-blue);
-}
-
-details {
-  margin-top: 10px;
-}
+  
 
 summary {
   font-family: var(--font-body);
