@@ -1,7 +1,7 @@
-/* === GOOGLE FONTS IMPORT === */
+/* GOOGLE FONTS IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap');
 
-/* === VARIABLES === */
+/* VARIABLES */
 :root {
   --brand-blue: #a8d5e2;
   --charcoal: #333333;
@@ -10,12 +10,12 @@
   --font-body: 'Nunito', sans-serif;
 }
 
-/* === RESET === */
+/*RESET*/
 * {
   box-sizing: border-box;
 }
 
-/* === BODY === */
+/*BODY*/
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -85,6 +85,35 @@ header p.lead {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+.hero-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;              /* full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Overlay for readability */
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-banner h1, .hero-banner p, .hero-banner button {
+  position: relative; /* keeps text above overlay */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+
+
 
 /* === SECTIONS === */
 section h1,
