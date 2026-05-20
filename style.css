@@ -177,12 +177,13 @@ h3, h4, h5 {
   border-radius: 5px;
 }
 
-/* === BUTTONS === */
+ /* === BUTTONS === */
 button,
-.btn {
-  background-color: var(--brand-blue);
-  color: white;
-  border: none;
+.btn,
+.btn-primary {
+  background-color: var(--brand-blue) !important;
+  color: white !important;
+  border: 2px solid white !important;
   padding: 10px 20px;
   cursor: pointer;
   font-family: var(--font-body);
@@ -192,16 +193,17 @@ button,
 }
 
 button:hover,
-.btn:hover {
-  background-color: var(--charcoal);
+.btn:hover,
+.btn-primary:hover {
+  background-color: var(--charcoal) !important;
+  border-color: var(--charcoal) !important;
+  color: white !important;
 }
 
 button:active,
 .btn:active {
   transform: scale(0.96);
-}
-
-  
+} 
 
 summary {
   font-family: var(--font-body);
@@ -236,14 +238,14 @@ img {
   height: auto;
 }
 
-/* === LAYOUT === */
+/*LAYOUT*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* === MEDIA QUERIES === */
+/*MEDIA QUERIES */
 @media (max-width: 768px) { /*adjusts hero+heading for smaller screens*/
 
   header {
@@ -271,6 +273,9 @@ img {
   }
 }
 
+
+
+/* REPLACE with this */
 @media (max-width: 480px) {
   body {
     font-size: 14px;
@@ -278,8 +283,12 @@ img {
 
   button,
   .btn {
-    width: 100%;
+    width: auto;
     text-align: center;
+  }
+
+  .form-card .btn {
+    width: 100%;
   }
 }
 
@@ -421,3 +430,59 @@ img {
   font-style: italic;
 }
 
+/* HERO BUTTON */
+.hero-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-banner .btn {
+  position: relative;
+  z-index: 2;
+  background-color: var(--brand-blue);
+  color: white;
+  border: 2px solid white;
+  width: auto;
+}
+
+.hero-banner .btn:hover {
+  background-color: white;
+  color: var(--charcoal);
+}
+
+/* Premium badge shimmer animation */
+.premium-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: gold;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.premium-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+  transform: skewX(-20deg);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0%   { left: -50%; }
+  100% { left: 120%; }
+}
+
+/* position relative on card for badge placement */
+.card {
+  position: relative;
+}
